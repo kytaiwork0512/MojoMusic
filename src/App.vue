@@ -63,6 +63,9 @@
         <b-navbar-brand to="/listAlbum" class="navBar"
           >List Album</b-navbar-brand
         >
+        <b-navbar-brand to="/listPlay" class="navBar"
+          >Play List</b-navbar-brand
+        >
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -104,8 +107,11 @@
       <router-view />
     </b-container>
 
-    <audio crossOrigin="anonymous" :src="playNow.url" controls autoplay></audio>
-    {{ playNow.name }}
+    <div class="player">
+      <label>Ca khúc: </label>{{ playNow.name }} <br>
+      <audio crossOrigin="anonymous" :src="playNow.url" controls autoplay ></audio>
+    
+    </div>
   </div>
 </template>
 
@@ -137,6 +143,7 @@ export default {
       }
     },
   },
+  
 };
 </script>
 
@@ -163,5 +170,14 @@ body {
 div .navBar {
   font-size: 25px;
   padding: 0 15px;
+}
+
+.player {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 </style>

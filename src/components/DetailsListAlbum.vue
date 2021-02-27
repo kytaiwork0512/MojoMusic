@@ -12,8 +12,6 @@
         <list :list="songOfAlbum"></list> <br />
       </b-col>
     </b-row>
-
-    <b-button variant="outline-primary">Delete Song</b-button>
   </div>
 </template>
 
@@ -78,4 +76,4 @@ div .col2__1 {
   color: #17a2b8;
   font-weight: 700;
 }
-</style>
+</style>  

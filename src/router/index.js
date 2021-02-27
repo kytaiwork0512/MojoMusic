@@ -6,6 +6,7 @@ import SingerList from "../components/SingerList.vue";
 import AlbumList from "../components/AlbumList.vue";
 import DetailsListSinger from "../components/DetailsListSinger.vue";
 import DetailsListAlbum from "../components/DetailsListAlbum.vue";
+import PlayList from "../components/PlayList.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -38,6 +39,11 @@ const routes = [
     path: "/album-details/:id",
     name: "DetailsListAlbum",
     component: DetailsListAlbum
+  },
+  {
+    path: "/listPlay",
+    name: "PlayList",
+    component: PlayList
   },
 
   {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div @click="playMusic(s)" v-for="s in list" :key="s.id">
-      <label></label> {{ s.name }}
+      <label>{{ s.name }}</label>
     </div>
   </div>
 </template>
